@@ -1,0 +1,119 @@
+/**
+ * Cálculo colunas:
+ * largura_unica_porcentagem = 100 / maximo_colunas
+ *
+ * Multiplicamos largura_unica_porcentagem pelo tamanho da coluna
+ */
+
+.container, .container-fluid {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.row:before, .row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+.col {
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    min-height: 1px;
+    float: left;
+}
+
+.col-1 {
+    width: 16.666666%;
+}
+
+.col-2 {
+    width: 33.333332%;
+}
+
+.col-3 {
+    width: 49.999998%;
+}
+
+.col-4 {
+    width: 66.666664%;
+}
+
+.col-5 {
+    width: 83.33333%;
+}
+
+.col-6  {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 992px;
+        margin: 0 auto;
+    }
+
+    .col-desktop-1 {
+        width: 8.333333%;
+    }
+
+    .col-desktop-2 {
+        width: 16.66%;
+    }
+
+    .col-desktop-3 {
+        width: 24.999999%;
+    }
+
+    .col-desktop-4 {
+        width: 33.333332%;
+    }
+
+    .col-desktop-5 {
+        width: 41.666665%;
+    }
+
+    .col-desktop-6 {
+        width: 49.999998%;
+    }
+
+    .col-desktop-7 {
+        width: 58.333331%;
+    }
+
+    .col-desktop-8 {
+        width: 66.666664%;
+    }
+
+    .col-desktop-9 {
+        width: 74.999997%;
+    }
+
+    .col-desktop-10 {
+        width: 83.33333%;
+    }
+
+    .col-desktop-11 {
+        width: 91.666663%;
+    }
+
+    .col-desktop-12 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
