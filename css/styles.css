@@ -6,24 +6,20 @@
     ordem
 */
 
-* {
-    box-sizing: border-box;
-}
+@import url('reset.css');
+@import url('grid.css');
+@import url('buttons.css');
+@import url('typography.css');
+@import url('icons.css');
+@import url('menu.css');
 
 body {
     font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
+    color: rgb(130, 130, 130);
 }
 
 #header .btn {
-    background-color: rgb(84, 209, 84);
     font-size: 16px;
-    border-radius: 30px;
     padding: 10px 30px;
 }
 
@@ -58,6 +54,7 @@ a {
 
 #header a {
     color: #ffffff;
+    transition: ease .5s all;
 }
 
 #header nav {
@@ -66,8 +63,6 @@ a {
 
 #header nav ul, #header nav ul li {
     display: inline-block;
-    margin: 0;
-    padding: 0;
 }
 
 #header .title {
@@ -76,4 +71,102 @@ a {
     top: 50%;
     transform: translate(0, -50%);
     text-align: center;
+}
+
+#footer, #team, #customers, #how-it-work {
+    text-align: center;
+    padding: 30px 0 30px 0;
+}
+
+#customers {
+    background-color: rgb(242, 242, 242);
+}
+
+#customers .btn {
+    margin-top: 80px;
+    background-color: rgb(220, 220, 220);
+    color: rgb(130, 130, 130);
+}
+
+#customers .btn:hover {
+    background-color: rgb(130, 130, 130);
+    color: rgb(220, 220, 220);
+}
+
+#customers .btn .material-icons {
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+#customers .container {
+    max-width: 1000px;
+}
+
+#team {
+    background-color: rgb(84, 209, 84);
+    color: white;
+}
+
+#team h2:after {
+    background-color: rgb(255, 255, 255);
+}
+
+#team .img-box-round {
+    width: 120px;
+    height: 120px;
+}
+
+#footer {
+    background-color: rgb(51, 51, 51);
+    text-align: left;
+}
+
+#footer, #footer a {
+    color: rgb(204, 204, 204);
+}
+
+#footer h3, #footer nav li {
+    text-transform: uppercase;
+}
+
+#footer h3:after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid rgb(204, 204, 204);
+    width: 30px;
+}
+
+#footer nav li {
+    padding: 3px 0;
+}
+
+#footer nav li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+#footer .social {
+    height: 200px;
+    line-height: 200px;
+    text-align: right;
+}
+
+#footer .social a {
+    display: inline-block;
+    padding: 0 0 0 10px;
+    opacity: 1;
+}
+
+#footer .social a:hover {
+    opacity: .5;
+    transition: ease .3s all;
+}
+
+#footer .social img {
+    vertical-align: middle;
+}
+
+#copyright {
+    text-align: center;
+    background-color: rgb(34, 34, 34);
+    padding: 10px;
 }

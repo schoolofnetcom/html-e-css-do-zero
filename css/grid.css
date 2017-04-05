@@ -110,6 +110,54 @@
     .col-desktop-12 {
         width: 100%;
     }
+
+    .col-offset-desktop-1 {
+        margin-left: 8.333333%;
+    }
+
+    .col-offset-desktop-2 {
+        margin-left: 16.66%;
+    }
+
+    .col-offset-desktop-3 {
+        margin-left: 24.999999%;
+    }
+
+    .col-offset-desktop-4 {
+        margin-left: 33.333332%;
+    }
+
+    .col-offset-desktop-5 {
+        margin-left: 41.666665%;
+    }
+
+    .col-offset-desktop-6 {
+        margin-left: 49.999998%;
+    }
+
+    .col-offset-desktop-7 {
+        margin-left: 58.333331%;
+    }
+
+    .col-offset-desktop-8 {
+        margin-left: 66.666664%;
+    }
+
+    .col-offset-desktop-9 {
+        margin-left: 74.999997%;
+    }
+
+    .col-offset-desktop-10 {
+        margin-left: 83.33333%;
+    }
+
+    .col-offset-desktop-11 {
+        margin-left: 91.666663%;
+    }
+
+    .col-offset-desktop-12 {
+        margin-left: 100%;
+    }
 }
 
 @media (min-width: 1200px) {
