@@ -1,0 +1,16 @@
+@import url('../form.css');
+@import url('../styles.css');
+
+#header.page-contato {
+    background-image: url("../../images/background-contato.jpg") ;
+}
+
+main {
+    background-color: rgb(243, 240, 231);
+}
+
+.btn {
+    border-radius: 0;
+    padding: 20px 60px;
+    font-size: 18px;
+}
