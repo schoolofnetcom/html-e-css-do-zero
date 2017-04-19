@@ -2,21 +2,23 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contato - Chatschool</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/pages/contato.css" rel="stylesheet">
+  <link href="css/pages/contato.min.css" rel="stylesheet">
 </head>
 <body>
 <header id="header" class="page-contato">
   <div class="container">
     <div class="row">
-      <div class="col col-desktop-3">
+      <div class="col col-desktop-3 col-6">
         <a href="index.html">
           <img src="images/logo.png" alt="Logo da Chatschool">
         </a>
       </div>
-      <div class="col col-desktop-9">
+      <div class="col col-desktop-9 col-6">
         <nav>
           <ul>
             <li><a href="/">Home</a></li>
@@ -44,8 +46,9 @@
     </p>
 
     <div class="container">
-      <form class="row">
-        <div class="col col-desktop-6">
+      <!-- https://github.com/dwyl/html-form-send-email-via-google-script-without-server -->
+      <form action="https://script.google.com/macros/s/AKfycbzwr5wrIL9yQUw3Lh83wjqIw05peunLi-iUHiNVMgQ9WgXbj3AM/exec" class="row" method="post">
+        <div class="col col-desktop-6 col-6">
           <div class="input-control">
             <input id="nome" name="nome" type="text" required placeholder="Nome...">
             <label for="nome">Nome*</label>
@@ -59,13 +62,13 @@
             <label for="telefone">Telefone</label>
           </div>
         </div>
-        <div class="col col-desktop-6">
+        <div class="col col-desktop-6 col-6">
           <div class="input-control">
             <textarea id="mensagem" name="mensagem" id="" cols="30" rows="10" placeholder="Mensagem..."></textarea>
             <label for="mensagem">Telefone</label>
           </div>
         </div>
-        <input type="submit" value="Salvar" class="btn orange">
+        <input type="submit" value="Enviar" class="btn orange">
       </form>
     </div>
 
@@ -78,7 +81,7 @@
         <p><a href=""><img src="images/logo.png" alt="Logo da Chatschool"></a></p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla mollis erat, vitae pulvinar nisi laoreet eget. Curabitur at arcu mi. Cras vitae pharetra mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed id felis leo. Maecenas est est, vulputate at congue non, pulvinar eu arcu.</p>
       </div>
-      <div class="col col-offset-desktop-1 col-desktop-2">
+      <div class="col col-offset-desktop-1 col-desktop-2 col-2">
         <h3>Menu</h3>
         <nav>
           <ul>
@@ -90,7 +93,7 @@
           </ul>
         </nav>
       </div>
-      <div class="col col-desktop-3 social">
+      <div class="col col-desktop-3 social col-4">
         <a href=""><img src="images/social-facebook.png" alt=""></a>
         <a href=""><img src="images/social-twitter.png" alt=""></a>
         <a href=""><img src="images/social-youtube.png" alt=""></a>
@@ -102,5 +105,27 @@
 <div id="copyright">
   &copy; Chatschool - 2017 - Todos os direitos reservados
 </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+  $('form').submit(function (event) {
+    event.preventDefault();
+    $('form input[type="submit"]').val('Aguarde...')
+        .attr('disabled', true);
+    $.ajax({
+      type: $('form').attr('method'),
+      url: $('form').attr('action'),
+      data: $('form').serialize(),
+      success: function () {
+        alert('Email enviado com sucesso');
+        $('form').trigger('reset');
+
+        $('form input[type="submit"]').val('Enviar')
+        .attr('disabled', false);
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
