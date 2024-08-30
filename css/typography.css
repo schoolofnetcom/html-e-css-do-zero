@@ -22,3 +22,6 @@ h2:after {
 .text-left {
     text-align: left;
 }
+h1{
+    font-family: "Jost", sans-serif;
+}

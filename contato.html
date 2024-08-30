@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contato - Chatschool</title>
+  <title>Contato - SOS Animal</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/pages/contato.min.css" rel="stylesheet">
@@ -15,7 +15,7 @@
     <div class="row">
       <div class="col col-desktop-3 col-6">
         <a href="index.html">
-          <img src="images/logo.png" alt="Logo da Chatschool">
+          <img src="images/logo.png" alt="">
         </a>
       </div>
       <div class="col col-desktop-9 col-6">
@@ -23,7 +23,7 @@
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="quem-somos.html">Quem somos</a></li>
-            <li><a href="clientes.html">Clientes</a></li>
+            <li><a href="clientes.html">Missão</a></li>
             <li><a href="equipe.html">Equipe</a></li>
             <li><a href="contato.html" class="active">Contato</a></li>
           </ul>
@@ -32,7 +32,7 @@
     </div>
     <div class="row">
       <div class="col col-desktop-12 title">
-        <h1>Alta produtividade em tempo real</h1>
+        <h1>Ajude-nos em nossa missão!</h1>
       </div>
     </div>
   </div>
@@ -41,8 +41,7 @@
   <section class="section section-center">
     <h2>Contato</h2>
     <p class="subtitle">
-      Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.Lorem ipsum dolor sit amet.<br>
-      Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.
+      Esta é uma organização que deseja ajudar a todos! <br>Portanto, preencha o formulário abaixo para pedir ajuda ou ajudar alguém!
     </p>
 
     <div class="container">
@@ -50,22 +49,28 @@
       <form action="https://script.google.com/macros/s/AKfycbzwr5wrIL9yQUw3Lh83wjqIw05peunLi-iUHiNVMgQ9WgXbj3AM/exec" class="row" method="post">
         <div class="col col-desktop-6 col-6">
           <div class="input-control">
-            <input id="nome" name="nome" type="text" required placeholder="Nome...">
-            <label for="nome">Nome*</label>
+            <input id="nome" name="nome" type="text" required placeholder="Nome">
+            <label for="nome">Nome</label>
           </div>
           <div class="input-control">
-            <input id="email" name="email" type="email" required placeholder="Email...">
-            <label for="email">Email*</label>
+            <input id="email" name="email" type="number" required placeholder="Telefone">
+            <label for="email">Telefone</label>
           </div>
+
           <div class="input-control">
-            <input id="telefone" name="telefone" type="number" placeholder="Telefone...">
-            <label for="telefone">Telefone</label>
+            <select name="tipos" id="telefone">
+            <option value="" disabled selected>--- Selecione uma opção abaixo ---</option>
+            <option value="op1" aria-required="true">Seja um colaborador da causa</option>
+            <option value="op2" aria-required="true">Peça ajuda pelo site</option>
+            <option value="op3" aria-required="true">Ajude alguém pelo site</option>
+            <label for="telefone">Tipo de serviço</label>
+          </select>
           </div>
         </div>
         <div class="col col-desktop-6 col-6">
           <div class="input-control">
             <textarea id="mensagem" name="mensagem" id="" cols="30" rows="10" placeholder="Mensagem..."></textarea>
-            <label for="mensagem">Telefone</label>
+            <label for="mensagem">Mensagem</label>
           </div>
         </div>
         <div class="col col-desktop-12 col-6">
@@ -81,7 +86,7 @@
     <div class="row">
       <div class="col col-offset-desktop-1 col-desktop-3">
         <p><a href=""><img src="images/logo.png" alt="Logo da Chatschool"></a></p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla mollis erat, vitae pulvinar nisi laoreet eget. Curabitur at arcu mi. Cras vitae pharetra mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed id felis leo. Maecenas est est, vulputate at congue non, pulvinar eu arcu.</p>
+        <p>Nossa missão é resgatar, cuidar e encontrar lares amorosos para animais abandonados, proporcionando uma segunda chance para aqueles que mais precisam. Buscamos sensibilizar e envolver a comunidade na luta contra o abandono, promovendo a adoção responsável e oferecendo suporte contínuo aos adotantes. Acreditamos que todos os animais merecem respeito, carinho e uma vida digna, e trabalhamos incansavelmente para transformar essa visão em realidade.</p>
       </div>
       <div class="col col-offset-desktop-1 col-desktop-2 col-2">
         <h3>Menu</h3>
@@ -89,7 +94,7 @@
           <ul>
             <li><a href="/" class="active">Home</a></li>
             <li><a href="quem-somos.html">Quem somos</a></li>
-            <li><a href="clientes.html">Clientes</a></li>
+            <li><a href="clientes.html">Missão</a></li>
             <li><a href="equipe.html">Equipe</a></li>
             <li><a href="contato.html">Contato</a></li>
           </ul>
@@ -105,7 +110,7 @@
 </footer>
 
 <div id="copyright">
-  &copy; Chatschool - 2017 - Todos os direitos reservados
+  &copy; SOS Animal - 2024 - Todos os direitos reservados
 </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -128,6 +133,8 @@
     });
   });
 </script>
+<style>
 
+</style>
 </body>
 </html>
